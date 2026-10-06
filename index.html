@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КомфортТранс — Перевозка пассажиров</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+    <img src="images/logo.png" alt="КомфортТранс" class="logo-img">
+    КомфортТранс
+</div>
+            <nav class="nav">
+                <a href="#home">Главная</a>
+                <a href="#services">Услуги</a>
+                <a href="#order">Заказать</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <button class="btn-order" onclick="scrollToOrder()">Заказать сейчас</button>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Комфортные перевозки пассажиров</h1>
+            <p>Такси, трансферы, междугородние поездки. Безопасно, вовремя и с комфортом.</p>
+            <button class="btn-primary" onclick="scrollToOrder()">Рассчитать стоимость</button>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+   <section id="services" class="services">
+    <div class="container">
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/taxi.jpg" alt="Городское такси" class="service-img">
+                <h3>Городское такси</h3>
+                <p>Быстрая подача по городу. Фиксированные цены в центре.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/transfer.jpg" alt="Трансферы" class="service-img">
+                <h3>Трансферы</h3>
+                <p>Аэропорт, вокзал, отели. Встреча с табличкой.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/intercity.jpg" alt="Междугородние перевозки" class="service-img">
+                <h3>Междугородние перевозки</h3>
+                <p>Комфортные поездки в другие города. Минивэны и легковые авто.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/group.jpg" alt="Групповые перевозки" class="service-img">
+                <h3>Групповые перевозки</h3>
+                <p>Корпоративные заказы, свадьбы, экскурсии.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Форма заказа -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Заказать перевозку</h2>
+            <form id="orderForm" class="order-form">
+                <div class="form-row">
+                    <input type="text" id="from" placeholder="Откуда" required>
+                    <input type="text" id="to" placeholder="Куда" required>
+                </div>
+                <div class="form-row">
+                    <input type="date" id="date" required>
+                    <input type="time" id="time" required>
+                </div>
+                <div class="form-row">
+                    <select id="carType" required>
+                        <option value="">Тип автомобиля</option>
+                        <option value="sedan">Легковой (1–3 чел.)</option>
+                        <option value="minivan">Минивэн (4–7 чел.)</option>
+                        <option value="bus">Микроавтобус (8+ чел.)</option>
+                    </select>
+                    <input type="number" id="passengers" placeholder="Количество пассажиров" min="1" required>
+                </div>
+                <input type="tel" id="phone" placeholder="Ваш телефон" required>
+                <textarea id="comment" placeholder="Комментарий (необязательно)"></textarea>
+                <button type="submit" class="btn-primary">Отправить заявку</button>
+            </form>
+            <div id="successMessage" class="success-message" style="display: none;">
+                Заявка отправлена! Мы свяжемся с вами в ближайшее время.
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-info">
+                <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                <p><strong>WhatsApp / Telegram:</strong> +7 (999) 123-45-67</p>
+                <p><strong>Email:</strong> info@komforttrans.ru<
+
+
+p>
+                <p><strong>Режим работы:</strong> Круглосуточно</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 КомфортТранс. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>/
+
+
+
+
+
